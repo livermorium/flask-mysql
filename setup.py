@@ -3,28 +3,24 @@ from setuptools import setup
 
 
 setup(
-    name='Flask-MySQL',
-    version='1.5.1',
-    url='https://github.com/cyberdelia/flask-mysql/',
-    license='BSD',
-    author='Timothee Peignier',
-    author_email='timothee.peignier@tryphon.org',
-    description='Flask simple mysql client',
-    packages=['flaskext'],
-    namespace_packages=['flaskext'],
+    name="flask-pyMySQL2",
+    version="2020.12",
+    url="https://github.com/livermorium/flask-mysql.git",
+    license="MIT",
+    author="livermorium",
+    description="Flask simple mysql client",
+    packages=["flask_pymysql"],
+    namespace_packages=["flask_pymysql"],
     zip_safe=False,
-    platforms='any',
-    install_requires=[
-        'Flask',
-        'PyMySQL'
-    ],
+    platforms="any",
+    install_requires=["Flask", "PyMySQL"],
     classifiers=[
-        'Environment :: Web Environment',
-        'Intended Audience :: Developers',
-        'License :: OSI Approved :: BSD License',
-        'Operating System :: OS Independent',
-        'Programming Language :: Python',
-        'Topic :: Internet :: WWW/HTTP :: Dynamic Content',
-        'Topic :: Software Development :: Libraries :: Python Modules'
-    ]
+        "Environment :: Web Environment",
+        "Intended Audience :: Developers",
+        "License :: OSI Approved :: BSD License",
+        "Operating System :: OS Independent",
+        "Programming Language :: Python",
+        "Topic :: Internet :: WWW/HTTP :: Dynamic Content",
+        "Topic :: Software Development :: Libraries :: Python Modules",
+    ],
 )

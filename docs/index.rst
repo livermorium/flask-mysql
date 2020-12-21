@@ -45,7 +45,7 @@ Obtain a cursor : ::
 
 Multiple connection example: ::
 
-from flaskext.mysql import MySQL
+from flask_pymysql.mysql import MySQL
   
 mysql_1 = MySQL(app, prefix="mysql1", host=os.getenv("db_host"), user=os.getenv("db_username"),password=os.getenv("db_pass"),db=os.getenv("db_name), autocommit=True, cursorclass=pymysql.cursors.DictCursor)
 mysql_2 = MySQL(app, prefix="mysql2", host="host2", user="UN", passwd="&&", db="DB",autocommit=True,cursorclass=pymysql.cursors.DictCursor)
